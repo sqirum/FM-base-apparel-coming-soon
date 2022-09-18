@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+html {
+    background:linear-gradient(150.03deg, #FFFFFF 0%, #FFF4F4 84.51%);
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    background: linear-gradient(150.03deg, #FFFFFF 0%, #FFF4F4 84.51%);
+    background-image: url('images/bg-pattern-desktop.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+aside {
+    flex: 1;
+    background-image: url('images/hero-desktop.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content {
+    flex: 2;
+}
+
+.content header {
+    padding: 75px 0;
+    margin-left: 165px;
+}
+
+.content main {
+    margin-top: 60px;
+    margin-left: 165px;
+    max-width: 450px;
+}
+
+main h1 {
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 64px;
+    letter-spacing: 17px;
+    color: #CE9898;
+    text-transform: uppercase;
+}
+
+main h1 span {
+    color:#423A3A;
+    line-height: 71px;
+    font-weight: 600;
+}
+
+main p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #CE9898;
+    margin-top: 32px;
+}
+
+main form {
+    margin-top: 40px;
+}
+
+main form .input-email {
+    position: relative;
+}
+
+main form input {
+    border: 1px solid #CE989850;
+    border-radius: 28px;
+    background-color: transparent;
+    padding: 14px 30px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #423A3A;
+    width: 100%;
+}
+
+main form input::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #CE989850;
+}
+
+main form button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: linear-gradient(135deg, #F8BFBF 0%, #EE8B8B 100%);
+    box-shadow: 0px 15px 20px rgba(198, 110, 110, 0.247569);
+    border-radius: 28px;
+    cursor: pointer;
+    outline: 0;
+    border: 0;
+    height: 100%;
+    padding: 0 44px;
+}
+
+main form button:hover {
+    background: linear-gradient(135deg, #F8BFBF70 0%, #EE8B8B70 100%);
+    box-shadow: 0px 15px 20px rgba(198, 110, 110, 0.247569);
+}
+
+main form .feedback-icon {
+    display: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 25%;
+}
+
+main form .feedback-message{
+    display: none;
+    margin-top: 4px;
+    color: #F96464;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 28px;
+}
+
+
+/* Utilities Class */
+.break {
+    flex-basis: 100%;
+    height: 0;
+}
