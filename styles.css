@@ -21,7 +21,7 @@ body {
     background-size: cover;
 }
 
-aside {
+#hero-image {
     flex: 1;
     background-image: url('images/hero-desktop.jpg');
     background-position: center;
@@ -135,4 +135,36 @@ main form .feedback-message{
 .break {
     flex-basis: 100%;
     height: 0;
+}
+
+@media only screen and (max-width: 576px) {
+    body {
+        flex-direction: column;
+    }
+    #hero-image {
+        margin-top: 97px;
+        background-image: url('images/hero-mobile.jpg');
+        flex: 6;
+    }
+    .content main {
+        margin: 0 30px;
+        text-align: center;
+        margin-top: 64px;
+    }
+    .content {
+        order: 2;
+        flex: 1;
+    }
+    .content header {
+        position: absolute;
+        padding: 30px;
+        margin: 0;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: white;
+    }
+    main form .feedback-message{
+        text-align: start;
+    }
 }
